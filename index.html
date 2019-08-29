@@ -60,6 +60,38 @@ Be like <b>WATER</b>.  Embrace the <b>FALL</b>.
 Optimized for Internet Explorer 7
 </font><!-- 8/29 added browser compatibility *Ricardo99* -->
 <BR>
+<div style="position:relative; 
+            font-size:60px; 
+            width:300px; 
+            height:60px; 
+            overflow:hidden; 
+            margin:0 auto 0 auto; 
+            border:none">
+<div style="float:left;">1</div>
+<div style="float:right;">3</div>
+<div style="text-align:center;">2</div>
+<div style="clear:both;"></div>
+<div style="position:absolute; 
+            top:0px; 
+            right:0px; 
+            z-index:99; 
+            background-color:transparent; 
+            width:40px; 
+            height:60px;" 
+     onmouseover="MouseoverMessageInAlertBox()"></div>
+</div>
+<script type="text/javascript">
+var firstTime = true;
+var message = "Oh hey there!";
+var later = "\n\nwhy do you keep hovering here?\n\nWaterfall 4ever!!!.\n\n ooh yeah!\n\n "
+function MouseoverMessageInAlertBox()
+{
+   if(firstTime) { alert(message); }
+   else { alert(later); }
+   firstTime = false;
+}
+</script>
+
 
 <div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-5z394ZDZa5bZCC75-6.gif' border='0' alt='free web counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=5z394ZDZa5bZCC75'></script></div> <!–– Counter added! *Rad* ––>
 <BR>
