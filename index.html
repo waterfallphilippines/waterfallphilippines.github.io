@@ -39,21 +39,22 @@ Be like <b>WATER</b>.  Embrace the <b>FALL</b>.
 </FONT>
 <BR>
 <BR>
+	<iframe src="https://waterfall.ph" />
   <script language="javascript">
     function changeImage() {
-	    @-webkit-keyframes roll {
-from { -webkit-transform: rotate(0deg) }
-to { -webkit-transform: rotate(360deg) }
+@-webkit-keyframes roll {
+    from { -webkit-transform: rotate(0deg) }
+    to   { -webkit-transform: rotate(360deg) }
 }
 
 @-moz-keyframes roll {
-from { -moz-transform: rotate(0deg) }
-to { -moz-transform: rotate(360deg) }
+    from { -moz-transform: rotate(0deg) }
+    to   { -moz-transform: rotate(360deg) }
 }
 
 @keyframes roll {
-from { transform: rotate(0deg) }
-to { transform: rotate(360deg) }
+    from { transform: rotate(0deg) }
+    to   { transform: rotate(360deg) }
 }
 
 body {
@@ -64,6 +65,9 @@ body {
 -webkit-animation-duration: 4s;
 -webkit-animation-iteration-count: 1;
 }
+
+html, body, div, iframe { margin:0; padding:0; height:100%; overflow:hidden;}
+iframe {width:100%; border:0; }
 </script>
     <body id='body'>
       <input type="image" src="https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif" image onclick="changeImage();"> <!–– Eggnog! *Rad* ––>
