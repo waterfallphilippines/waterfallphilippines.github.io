@@ -22,7 +22,6 @@ Legal owners reserve the right to request the removal of the song used for this 
 <script> document.getElementById('myaudio').play(); </script>
 	
 <BODY BGCOLOR=BLACK>
-<body background="bg.gif">
 <center>
 <h1><MARQUEE WIDTH=50% SCROLLAMOUNT=15><FONT SIZE=300 COLOR=GREEN>WATERFALL PHILIPPINES!!!</FONT></MARQUEE></h1> <!–– SEO H1, feel free to move this around *Rad* ––> 
 <BR>
@@ -40,20 +39,21 @@ Be like <b>WATER</b>.  Embrace the <b>FALL</b>.
 </FONT>
 <BR>
 <BR>
-  <script>
-    var colors = ["yellow", "blue", "black", "violet", "pink"];
-    var colorIndex = 0;
-    function changeColor() {
-        var col = document.getElementById("body");
-        if( colorIndex >= colors.length ) {
-            colorIndex = 0;
+  <script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "http://www.userinterfaceicons.com/80x80/minimize.png") 
+        {
+            document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
         }
-        col.style.backgroundColor = colors[colorIndex];
-        colorIndex++;
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
+        }
     }
 </script>
     <body id='body'>
-      <input type="image" src="https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif" image onclick="changeColor();"> <!–– Eggnog! *Rad* ––>
+      <input type="image" src="https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif" image onclick="changeImage();"> <!–– Eggnog! *Rad* ––>
 <BR>
 <BR>
 <BR>
