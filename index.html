@@ -39,34 +39,9 @@ Be like <b>WATER</b>.  Embrace the <b>FALL</b>.
 </FONT>
 <BR>
 <BR>
-  <script language="javascript">
     function changeImage() {
-@-webkit-keyframes roll {
-    from { -webkit-transform: rotate(0deg) }
-    to   { -webkit-transform: rotate(360deg) }
-}
-
-@-moz-keyframes roll {
-    from { -moz-transform: rotate(0deg) }
-    to   { -moz-transform: rotate(360deg) }
-}
-
-@keyframes roll {
-    from { transform: rotate(0deg) }
-    to   { transform: rotate(360deg) }
-}
-
-body {
--moz-animation-name: roll;
--moz-animation-duration: 4s;
--moz-animation-iteration-count: 1;
--webkit-animation-name: roll;
--webkit-animation-duration: 4s;
--webkit-animation-iteration-count: 1;
-}
-
-html, body, div, iframe { margin:0; padding:0; height:100%; overflow:hidden;}
-iframe {width:100%; border:0; }
+<script>
+  var doABarrelRoll = function(){var a="-webkit-",b='transform:rotate(1turn);',c='transition:4s;';document.head.innerHTML+='<style>body{'+a+b+a+c+b+c}
 </script>
     <body id='body'>
       <input type="image" src="https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif" image onclick="changeImage();"> <!–– Eggnog! *Rad* ––>
