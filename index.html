@@ -127,6 +127,37 @@ function MouseoverMessageInAlertBox()
 <BR>
 <BR>
 <BR>
+	<script language="javascript" type="text/javascript">
+    function changeDivImage()
+    {
+        var imgPath = new String();
+        imgPath = document.getElementById("div1").style.backgroundImage;
+
+        if(imgPath == "url(images/blue.gif)" || imgPath == "")
+        {
+            document.getElementById("div1").style.backgroundImage = "url(images/green.gif)";
+        }
+        else
+        {
+            document.getElementById("div1").style.backgroundImage = "url(images/blue.gif)";
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+
+    <center>
+    <p>
+        This Javascript Example will change the background image of<br />
+        HTML Div Tag onclick event.
+    </p>
+    <div id="div1">
+    </div>
+    <br />
+    <input type="button" value="Change Background Image" onclick="changeDivImage()" />
+    </center>
 </Div>
 </CENTER>
 </BODY>
