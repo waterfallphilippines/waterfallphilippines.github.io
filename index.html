@@ -41,16 +41,29 @@ Be like <b>WATER</b>.  Embrace the <b>FALL</b>.
 <BR>
   <script language="javascript">
     function changeImage() {
+	    @-webkit-keyframes roll {
+from { -webkit-transform: rotate(0deg) }
+to { -webkit-transform: rotate(360deg) }
+}
 
-        if (document.getElementById("image").src == "https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif") 
-        {
-            document.getElementById("image").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrk3WlJxC5XXLcBuipkEFq7FEuYWYqwyh3aGzUdaCkF1bC58E3";
-        }
-        else 
-        {
-            document.getElementById("image").src = "https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif";
-        }
-    }
+@-moz-keyframes roll {
+from { -moz-transform: rotate(0deg) }
+to { -moz-transform: rotate(360deg) }
+}
+
+@keyframes roll {
+from { transform: rotate(0deg) }
+to { transform: rotate(360deg) }
+}
+
+body {
+-moz-animation-name: roll;
+-moz-animation-duration: 4s;
+-moz-animation-iteration-count: 1;
+-webkit-animation-name: roll;
+-webkit-animation-duration: 4s;
+-webkit-animation-iteration-count: 1;
+}
 </script>
     <body id='body'>
       <input type="image" src="https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif" image onclick="changeImage();"> <!–– Eggnog! *Rad* ––>
@@ -127,37 +140,6 @@ function MouseoverMessageInAlertBox()
 <BR>
 <BR>
 <BR>
-	<script language="javascript" type="text/javascript">
-    function changeDivImage()
-    {
-        var imgPath = new String();
-        imgPath = document.getElementById("div1").style.backgroundImage;
-
-        if(imgPath == "url(https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif)" || imgPath == "")
-        {
-            document.getElementById("div1").style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrk3WlJxC5XXLcBuipkEFq7FEuYWYqwyh3aGzUdaCkF1bC58E3)";
-        }
-        else
-        {
-            document.getElementById("div1").style.backgroundImage = "url(https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif)";
-        }
-    }
-    </script>
-
-</head>
-
-<body>
-
-    <center>
-    <p>
-        This Javascript Example will change the background image of<br />
-        HTML Div Tag onclick event.
-    </p>
-    <div id="div1">
-    </div>
-    <br />
-    <input type="button" value="Change Background Image" onclick="changeDivImage()" />
-    </center>
 </Div>
 </CENTER>
 </BODY>
