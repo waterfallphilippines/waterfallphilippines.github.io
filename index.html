@@ -89,36 +89,12 @@ Be like <b>WATER</b>.  Embrace the <b>FALL</b>.
 
 <footer>
 	<!–– Intentional bug code message box thingy *Rad* ––> 
-<div style="position:relative; 
-            font-size:60px; 
-            width:300px; 
-            height:60px; 
-            overflow:hidden; 
-            margin:0 auto 0 auto; 
-            border:none">
-<div style="float:center;"></div>
-<div style="text-align:center;"> </div>
-<div style="clear:both;"></div>
-<div style="position:absolute; 
-            top:0px; 
-            right:0px; 
-            z-index:99; 
-            background-color:red
-	    width:40px; 
-            height:60px;
-	    onmouseover="MouseoverMessageInAlertBox()"></div>
+	<div class="image-hover">
+    Some title
 </div>
-<script type="text/javascript">
-var firstTime = true;
-var message = "Oh hey there!";
-var later = "\n\n Hello again! Hope you enjoyed your visit! \n\n Check us out! https://www.facebook.com/groups/agilephilippines \n Feel free to join the discussion in Slack! https://slack.agile.ph \n Check out upcoming meetups! https://meetup.agile.ph \n "
-function MouseoverMessageInAlertBox()
-{
-   if(firstTime) { alert(message); }
-   else { alert(later); }
-   firstTime = false;
-}
-</script>	
+
+.image-hover { background: url(https://www.hover.com/wp-content/uploads/2014/09/gif-2.gif);}
+.image-hover:hover { background: url(https://www.hover.com/wp-content/uploads/2014/09/gif-1.gif);}
 	</footer>
 </Div>
 </CENTER>
