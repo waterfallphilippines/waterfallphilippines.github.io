@@ -55,13 +55,20 @@ Be like <b>WATER</b>.  Embrace the <b>FALL</b>.
 <BR>
 <BR>
 	 
-<button onclick="myFunction()">Learn more about Waterfall!</button> <!–– Linked to waterfall meetup *Rad* ––>
+<button onclick="pictureChange()">Learn more about Waterfall!</button> <!–– Linked to waterfall meetup *Rad* ––>
 
 <script>
-function myFunction() {
-  document.getElementById("logo").src="https://www.hover.com/wp-content/uploads/2014/09/gif-2.gif";
-}
+ function pictureChange()
+  {
+   document.getElementById("logo").src="https://media.giphy.com/media/AlqUdr1CSODLO/giphy.gif";
+  }
 </script>
+
+<body>
+ <img id="logo" src="https://www.hover.com/wp-content/uploads/2014/09/gif-2.gif">
+ <p><input type="button" id="theButton" value="click me!" 
+    onclick="pictureChange()"></p>
+</body>
 	
 	<!–– Load FB SDK for JS *Rad* ––> 
   <div id="fb-root"></div>
